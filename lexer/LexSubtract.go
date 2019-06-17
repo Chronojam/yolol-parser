@@ -5,7 +5,7 @@ import (
 )
 
 func LexSubtract(lexer *Lexer) LexFn {
-	lexer.Pos += len(lexertoken.Assignment)
+	lexer.Pos += len(lexertoken.Subtract)
 	lexer.Emit(lexertoken.TOKEN_Subtract)
-	return LexSubtract
+	return LexValue
 }
