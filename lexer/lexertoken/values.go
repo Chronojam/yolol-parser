@@ -1,14 +1,47 @@
 package lexertoken
 
 const (
-	EOF     rune   = 0
+	EOF          rune   = 0
+	LeftBracket  string = "("
+	RightBracket string = ")"
+
 	If      string = "IF"
 	Then    string = "THEN"
 	End     string = "END"
 	NewLine string = "\n"
 
-	Assignment string = "="
-	EqualToo   string = "=="
+	Goto string = "goto"
+
+	Add                      string = "+"
+	Subtract                 string = "-"
+	Multiply                 string = "*"
+	Divide                   string = "/"
+	Increment                string = "++"
+	Decrement                string = "--"
+	Assignment               string = "="
+	AdditionAssignment       string = "+="
+	SubtractionAssignment    string = "-="
+	MultiplicationAssignment string = "*="
+	DivisionAssignment       string = "/="
+	ModuloAssignment         string = "%="
+	Exponation               string = "^"
+	Modulo                   string = "%"
+	Modulus                  string = "ABS"
+	Factorial                string = "!"
+	SquareRoot               string = "SQRT"
+	Sin                      string = "SIN"
+	Cos                      string = "COS"
+	Tan                      string = "TAN"
+	ArcSin                   string = "ARCSIN"
+	ArcCos                   string = "ARCCOS"
+	ArcTan                   string = "ARCTAN"
+
+	LessThan              string = "<"
+	GreaterThan           string = ">"
+	LessThanOrEqualToo    string = "<="
+	GreaterThanOrEqualToo string = ">="
+	NotEqualToo           string = "~="
+	EqualToo              string = "=="
 )
 
 type Token struct {

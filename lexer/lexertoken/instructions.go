@@ -10,10 +10,8 @@ const (
 	// COMMANDS
 	// TOKEN_If IF
 	TOKEN_If
-	TOKEN_IfCondition
 	// TOKEN_Then THEN
 	TOKEN_Then
-	TOKEN_ThenCondition
 	// TOKEN_End END
 	TOKEN_End
 
